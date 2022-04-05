@@ -41,9 +41,9 @@ public class Game : MonoBehaviour
     public void Update()
     {
         //
-        GameManager.leave += shovel.Count* Time.fixedDeltaTime*0.1f;
-        GameManager.leave += tree.Count * Time.fixedDeltaTime*0.5f;
-        GameManager.leave += airgun.Count * Time.fixedDeltaTime;
+        GameManager.leave += shovel.Count* Time.fixedDeltaTime*0.03f;
+        GameManager.leave += tree.Count * Time.fixedDeltaTime*0.1f;
+        GameManager.leave += airgun.Count * Time.fixedDeltaTime*0.3f;
 
         ui.text = "Leaves: " + (int)GameManager.leave;
     }
