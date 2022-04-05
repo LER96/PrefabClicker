@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static int leave;
+    public static float leave;
     public static int multiplier;
     void Start()
     {
