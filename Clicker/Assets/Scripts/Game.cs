@@ -12,12 +12,17 @@ public class Game : MonoBehaviour
     public List<int> airgun;
     public void Increment()
     {
-        //GameManager.leave += GameManager.multiplier;
-        GameManager.leave += 1;
+        GameManager.leave += GameManager.multiplier;
     }
 
     public void Buy(int num)
     {
+        if (num == 4 && GameManager.leave >= 30)
+        {
+            GameManager.multiplier++;
+            GameManager.leave -= 30;
+        }
+
         if (num == 1 && GameManager.leave >= 25)
         {
             //GameManager.multiplier += 1;
