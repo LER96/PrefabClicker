@@ -12,8 +12,7 @@ public class Game : MonoBehaviour
     public List<int> airgun;
     public void Increment()
     {
-        //GameManager.leave += GameManager.multiplier;
-        GameManager.leave += 1 * GameManager.multiplier;
+        GameManager.leave += GameManager.multiplier;
     }
 
     public void Buy(int num)
